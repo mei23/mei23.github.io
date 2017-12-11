@@ -1,0 +1,112 @@
+<!DOCTYPE html><html><head><link rel="preload" href="./_next/1c367989-4037-4b50-9b30-6fe9daf0f4c6/page/status/index.js" as="script"/><link rel="preload" href="./_next/1c367989-4037-4b50-9b30-6fe9daf0f4c6/page/_error/index.js" as="script"/><link rel="preload" href="./_next/de91069992e93bd4b0f7cfef26495a50/app.js" as="script"/><meta charSet="utf-8" class="next-head"/><meta name="viewport" content="width=device-width, initial-scale=1" class="next-head"/><meta http-equiv="Expires" content="0" class="next-head"/><title class="next-head">ステータス</title><style class="next-head">body {
+  background-color: #131;
+  color: #eef;
+  font-family: "sans-serif"; }
+
+input[type=submit], button {
+  padding: 0.3em 1em;
+  margin: 0.2em;
+  background: purple;
+  color: white;
+  font-family: "sans-serif";
+  font-size: 1em;
+  border: none;
+  border-radius: 4px; }
+
+input[type=text] {
+  font-family: "sans-serif";
+  padding: 0.3em;
+  margin: 0.1em;
+  background: #1e591e;
+  color: #eef;
+  font-size: 1em;
+  border: none; }
+
+input[type=text]:focus {
+  background: #246c24; }
+
+input[type=submit]:hover, button:hover {
+  background: #b300b3; }
+
+a {
+  color: #ff1aff;
+  text-decoration: none; }
+
+a:hover {
+  color: #ff80ff; }
+
+a:active {
+  color: #ff80ff; }
+
+div.current_params {
+  border: solid 2px #ff80ff;
+  border-radius: 2px;
+  padding: 0.5em;
+  margin: 0.5em 0em; }
+
+div.pager_box {
+  margin-top: 1em;
+  margin-bottom: 1em; }
+
+div.json_text {
+  background: #0b200b;
+  color: #37a637;
+  overflow: scroll;
+  height: 100px; }
+
+div.json_text::-webkit-scrollbar {
+  background: #0c240c;
+  width: 12px;
+  height: 12px; }
+
+div.json_text::-webkit-scrollbar-track {
+  background: #0c240c; }
+
+div.json_text::-webkit-scrollbar-corner {
+  background: #164216; }
+
+div.json_text::-webkit-scrollbar-thumb {
+  background: #164216; }
+
+a.move_link:hover {
+  cursor: pointer; }
+
+.layout {
+  max-width: 640px;
+  margin: auto;
+  padding: 1em;
+  border: 1px solid #1e591e; }
+
+.status {
+  border: solid 1px #ccc;
+  margin-top: -1px;
+  border-right: 0px;
+  border-left: 0px;
+  padding: 0.2em; }
+
+.attachment-image {
+  max-width: 100%;
+  max-height: 110px; }
+
+.attachment-video {
+  max-width: 100%;
+  max-height: 110px; }
+
+.sts-count {
+  text-align: right;
+  padding: 0px;
+  margin: 0px; }
+</style><link rel="stylesheet" href="../custom/style.css" class="next-head"/><base target="_blank" class="next-head"/></head><body><div><div id="__next"><div data-reactroot=""><div class="layout"><h1>ステータス</h1><p>ステータス（トゥート）の様々な情報を参照します <a href="https://github.com/mei23/mstpubapi#%E3%82%B9%E3%83%86%E3%83%BC%E3%82%BF%E3%82%B9">説明</a></p><div class="change_form"><form>Host:<input type="text" required="" style="width:10em" title="インスタンスホスト(例: example.com)"/> <!-- -->Id:<input type="text" required="" style="width:20em" title="ステータスID"/><button type="submit">変更反映</button></form></div><div class="current_params">現在 Host: <!-- -->, Id: <!-- --> を表示中</div><div><h3>ステータス情報</h3>none</div><div><h3>アカウント情報</h3>none</div><div class="ancestors"><h3>ancestors (上方参照)</h3>取得中またはエラー</div><div class="descendants"><h3>descendants (下方参照)</h3>取得中またはエラー</div><div class="boosters"><h3>ブーストしたアカウント</h3>取得中またはエラー</div><div class="favters"><h3>お気に入りしたアカウント</h3>取得中またはエラー</div><div><h3>JSON</h3><h4>status</h4><div class="json_text">null</div><h4>context (ancestors / descendants を含む)</h4><div class="json_text">null</div><h4>reblogged_by (ブースト)</h4><div class="json_text">null</div><h4>favourited_by (お気に入り)</h4><div class="json_text">null</div></div></div></div></div><div id="__next-error"></div></div><div><script>
+          __NEXT_DATA__ = {"props":{},"pathname":"/status","query":{},"buildId":"1c367989-4037-4b50-9b30-6fe9daf0f4c6","buildStats":{"app.js":{"hash":"de91069992e93bd4b0f7cfef26495a50"}},"assetPrefix":".","nextExport":true,"err":null,"chunks":[]}
+          module={}
+          __NEXT_LOADED_PAGES__ = []
+          __NEXT_LOADED_CHUNKS__ = []
+
+          __NEXT_REGISTER_PAGE = function (route, fn) {
+            __NEXT_LOADED_PAGES__.push({ route: route, fn: fn })
+          }
+
+          __NEXT_REGISTER_CHUNK = function (chunkName, fn) {
+            __NEXT_LOADED_CHUNKS__.push({ chunkName: chunkName, fn: fn })
+          }
+        </script><script async="" id="__NEXT_PAGE__/status" type="text/javascript" src="./_next/1c367989-4037-4b50-9b30-6fe9daf0f4c6/page/status/index.js"></script><script async="" id="__NEXT_PAGE__/_error" type="text/javascript" src="./_next/1c367989-4037-4b50-9b30-6fe9daf0f4c6/page/_error/index.js"></script><div></div><script type="text/javascript" src="./_next/de91069992e93bd4b0f7cfef26495a50/app.js" async=""></script></div></body></html>

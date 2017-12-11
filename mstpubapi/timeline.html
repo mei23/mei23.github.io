@@ -1,0 +1,112 @@
+<!DOCTYPE html><html><head><link rel="preload" href="./_next/1c367989-4037-4b50-9b30-6fe9daf0f4c6/page/timeline/index.js" as="script"/><link rel="preload" href="./_next/1c367989-4037-4b50-9b30-6fe9daf0f4c6/page/_error/index.js" as="script"/><link rel="preload" href="./_next/de91069992e93bd4b0f7cfef26495a50/app.js" as="script"/><meta charSet="utf-8" class="next-head"/><meta name="viewport" content="width=device-width, initial-scale=1" class="next-head"/><meta http-equiv="Expires" content="0" class="next-head"/><title class="next-head">タイムライン</title><style class="next-head">body {
+  background-color: #131;
+  color: #eef;
+  font-family: "sans-serif"; }
+
+input[type=submit], button {
+  padding: 0.3em 1em;
+  margin: 0.2em;
+  background: purple;
+  color: white;
+  font-family: "sans-serif";
+  font-size: 1em;
+  border: none;
+  border-radius: 4px; }
+
+input[type=text] {
+  font-family: "sans-serif";
+  padding: 0.3em;
+  margin: 0.1em;
+  background: #1e591e;
+  color: #eef;
+  font-size: 1em;
+  border: none; }
+
+input[type=text]:focus {
+  background: #246c24; }
+
+input[type=submit]:hover, button:hover {
+  background: #b300b3; }
+
+a {
+  color: #ff1aff;
+  text-decoration: none; }
+
+a:hover {
+  color: #ff80ff; }
+
+a:active {
+  color: #ff80ff; }
+
+div.current_params {
+  border: solid 2px #ff80ff;
+  border-radius: 2px;
+  padding: 0.5em;
+  margin: 0.5em 0em; }
+
+div.pager_box {
+  margin-top: 1em;
+  margin-bottom: 1em; }
+
+div.json_text {
+  background: #0b200b;
+  color: #37a637;
+  overflow: scroll;
+  height: 100px; }
+
+div.json_text::-webkit-scrollbar {
+  background: #0c240c;
+  width: 12px;
+  height: 12px; }
+
+div.json_text::-webkit-scrollbar-track {
+  background: #0c240c; }
+
+div.json_text::-webkit-scrollbar-corner {
+  background: #164216; }
+
+div.json_text::-webkit-scrollbar-thumb {
+  background: #164216; }
+
+a.move_link:hover {
+  cursor: pointer; }
+
+.layout {
+  max-width: 640px;
+  margin: auto;
+  padding: 1em;
+  border: 1px solid #1e591e; }
+
+.status {
+  border: solid 1px #ccc;
+  margin-top: -1px;
+  border-right: 0px;
+  border-left: 0px;
+  padding: 0.2em; }
+
+.attachment-image {
+  max-width: 100%;
+  max-height: 110px; }
+
+.attachment-video {
+  max-width: 100%;
+  max-height: 110px; }
+
+.sts-count {
+  text-align: right;
+  padding: 0px;
+  margin: 0px; }
+</style><link rel="stylesheet" href="../custom/style.css" class="next-head"/><base target="_blank" class="next-head"/></head><body><div><div id="__next"><div data-reactroot=""><div class="layout"><h1>タイムライン</h1><p>各タイムラインを参照します <a href="https://github.com/mei23/mstpubapi/blob/master/README.md#%E3%82%BF%E3%82%A4%E3%83%A0%E3%83%A9%E3%82%A4%E3%83%B3">説明</a></p><div class="change_form"><form>Host:<input type="text" required="" style="width:10em" title="インスタンスホスト(例: example.com)"/> <!-- -->Type:<input type="text" style="width:10em" title="種類(local=ローカル, fera=連合, その他はタグ扱い)"/>(local/fera/タグ)<!-- --> <!-- -->Max:<input type="text" style="width:10em" title="このIDより前から表示(-1の場合最新から)"/> <!-- -->Since:<input type="text" style="width:10em" title="このIDの手前まで表示(-1の場合最大件数まで)"/><button type="submit">変更反映</button></form></div><div class="current_params">現在 Host: <!-- --> Type: <!-- --> Max: <!-- --> Since: </div><div><div class="pager_box" style="display:flex;justify-content:flex-end;align-items:center"><div style="margin-right:auto"><button title="新着のみを表示します">新着表示</button></div><div style="margin-right:auto"><button title="最新からの表示に戻ります">最新に戻る</button></div><div style="text-align:right;margin-right:10px"><div>未来へ移動:<a class="move_link">10分</a>/<a class="move_link">1時間</a>/<a class="move_link">3時間</a>/<a class="move_link">6時間</a>/<a class="move_link">1日</a>/<a class="move_link">3日</a>/<a class="move_link">7日</a>/<a class="move_link">30日</a></div><div>過去へ移動:<a class="move_link">10分</a>/<a class="move_link">1時間</a>/<a class="move_link">3時間</a>/<a class="move_link">6時間</a>/<a class="move_link">1日</a>/<a class="move_link">3日</a>/<a class="move_link">7日</a>/<a class="move_link">30日</a></div></div><div><button title="表示中のステータスの次のページを表示します">次ページ</button></div></div>取得中またはエラー<div class="pager_box" style="display:flex;justify-content:flex-end;text-align:right"><div style="margin-right:auto"></div><div><button title="表示中のステータスの次のページを表示します">次ページ</button></div></div></div><div><h3>JSON</h3><h4>statuses</h4><div class="json_text">null</div></div></div></div></div><div id="__next-error"></div></div><div><script>
+          __NEXT_DATA__ = {"props":{},"pathname":"/timeline","query":{},"buildId":"1c367989-4037-4b50-9b30-6fe9daf0f4c6","buildStats":{"app.js":{"hash":"de91069992e93bd4b0f7cfef26495a50"}},"assetPrefix":".","nextExport":true,"err":null,"chunks":[]}
+          module={}
+          __NEXT_LOADED_PAGES__ = []
+          __NEXT_LOADED_CHUNKS__ = []
+
+          __NEXT_REGISTER_PAGE = function (route, fn) {
+            __NEXT_LOADED_PAGES__.push({ route: route, fn: fn })
+          }
+
+          __NEXT_REGISTER_CHUNK = function (chunkName, fn) {
+            __NEXT_LOADED_CHUNKS__.push({ chunkName: chunkName, fn: fn })
+          }
+        </script><script async="" id="__NEXT_PAGE__/timeline" type="text/javascript" src="./_next/1c367989-4037-4b50-9b30-6fe9daf0f4c6/page/timeline/index.js"></script><script async="" id="__NEXT_PAGE__/_error" type="text/javascript" src="./_next/1c367989-4037-4b50-9b30-6fe9daf0f4c6/page/_error/index.js"></script><div></div><script type="text/javascript" src="./_next/de91069992e93bd4b0f7cfef26495a50/app.js" async=""></script></div></body></html>
