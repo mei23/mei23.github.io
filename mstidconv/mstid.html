@@ -1,0 +1,238 @@
+<!doctype html><html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/i18n/jquery-ui-i18n.min.js"></script>
+    <style>
+        body {
+            background: #121;
+            color: #eef;
+            font-family: sans-serif;
+        }
+        #wrap {
+            max-width: 640px;
+            margin: auto;
+            padding: 1em;
+            border: 1px solid #131;
+        }
+        input {
+            padding: 0.3em;
+            margin: 0.1em;
+            font-size: 1em;
+            background: #131;
+            color: #eef;
+            border: none;
+        }
+        input:focus{
+            background: #242;
+        }
+        button {
+            padding: 0.3em 0.5em;
+            margin: 0.2em;
+            font-size: 1em;
+            background: purple;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+        }
+        button:hover {
+            background: #919;
+        }
+        button:active {
+            background: #515;
+        }
+        dt {
+            font-weight: bold;
+        }
+        dd {
+            margin-left: 0em;
+        }
+    </style>
+</head>
+<body>
+
+<div id="wrap">
+    <h1>mstidconv</h1>
+    <p>Mastodon v2.0.0 以降のステータスIDを日時と相互変換します</p>
+    <div style="margin:1em 0em">
+        <dl>
+            <dt>ステータスID:</dt>
+            <dd><input type="text" id="mstid" style="width:60%"></dd>
+        </dl>
+        <div>Hex: <tt id='idInHex'></tt></div>
+    </div>
+
+    <div style="margin:1em 0em">
+        <button id="toDate" title="ステータスIDを日時に変換します">IDを日時に↓</button>
+        <button id="toId" title="日時をステータスIDに変換します">日時をIDに↑</button>
+        <button id="goNow" title="現在日時を設定して変換します">現在日時</button>
+    </div>
+
+    <div style="margin:1em 0em">
+        <dl>
+            <dt>日時(たぶん地方時):</dt>
+            <dd>
+                <input type="text" id="datePart" style="width:120px">
+                <input type="text" id="timePart" style="width:120px">
+            </dd>
+        </dl>
+    </div>
+    <p>※ 厳密には IDから日時部分を抽出 と 日時からTimelineフィルタで使えるような値を生成 になる。<br>
+        そのため ID→日時→ID で元のステータスIDに回帰するとは限らない。
+    </p>
+</div>
+
+<script>
+    var MstDateId = MstDateId || {};
+    (function() {
+
+        var B_16 = Math.pow(2, 16);
+
+        MstDateId.idToDate = function(id) {
+            // UNIX Time (ms) = ID >> 16
+
+            return new Date(id / B_16);
+        };
+
+        MstDateId.dateToId = function(date) {
+            // ID = UNIX Time (ms) << 16
+
+            // << 16
+            var id = date.getTime() * B_16;
+            // & 0xFFFF
+            id = parseInt(id / B_16) * B_16;
+            return id;
+        };
+
+        MstDateId.formatDate = function(date, format) {
+            format = format || 'YYYY/mm/dd HH:MM:SS';
+            var str = format
+                .replace(/YYYY/g, date.getFullYear())
+                .replace(/mm/g, ('0' + (date.getMonth() + 1)).slice(-2))
+                .replace(/dd/g, ('0' + date.getDate()).slice(-2))
+                .replace(/HH/g, ('0' + date.getHours()).slice(-2))
+                .replace(/MM/g, ('0' + date.getMinutes()).slice(-2))
+                .replace(/SS/g, ('0' + date.getSeconds()).slice(-2))
+                .replace(/fff/g, ('00' + date.getMilliseconds()).slice(-3));
+            return str;
+        };
+
+        MstDateId.parseDate = function(str) {
+            var date;
+            var m = str.match(/^(\d+)[/](\d+)[/](\d+)\s+(\d+)[:](\d+)[:](\d+)(?:[.](\d{1,3}))?/);
+            var f;
+
+            if (m) {
+                date = new Date(m[1]+'/'+m[2]+'/'+m[3] + ' ' + m[4]+':'+m[5]+':'+m[6]);
+                if (m[7]) {
+                    f = Number(m[7]);
+                    if (f < 10)  f *= 100;
+                    if (f < 100) f *= 10;
+                    date = new Date(date.getTime() + f);
+                }
+            }
+            else {
+                throw "invalid date format: " + str;
+            }
+
+            return date;
+        };
+
+        MstDateId.formatHex = function(i) {
+            var x = Number(i).toString(16).toUpperCase();
+            return '0x' + x;
+        }
+    }());
+
+    (function() {
+
+        var toDate = function() {
+            $('#datePart').val('');
+            $('#timePart').val('');
+            $('#idInHex').text('');
+
+            var id = $('#mstid').val();
+            var dt = MstDateId.idToDate(id);
+            $('#datePart').val(MstDateId.formatDate(dt, 'YYYY/mm/dd'));
+            $('#timePart').val(MstDateId.formatDate(dt, 'HH:MM:SS.fff'));
+            
+            $('#idInHex').text(MstDateId.formatHex(id));
+        };
+
+        var toId = function() {
+            $('#mstid').val('');
+
+            var dateStr =  $('#datePart').val() + ' ' + $('#timePart').val();
+            var date = MstDateId.parseDate(dateStr);
+            var id = MstDateId.dateToId(date);
+            $('#mstid').val(id);
+            $('#idInHex').text(MstDateId.formatHex(id));
+        };
+
+        var goNow = function() {
+            $('#mstid').val(MstDateId.dateToId(new Date()));
+            toDate();
+        };
+
+        var normilizeID = function() {
+            var s = $('#mstid').val();
+            if (s.match(/[/](\d+)$/)) {
+                var id = RegExp.$1;
+                $('#mstid').val(id);
+            }
+        }
+
+        $(function() {
+            // fill initial values
+            //goNow();
+
+            // bind events
+            $('button#toDate').on('click', function() {
+                toDate();
+            });
+
+            $('button#toId').on('click', function() {
+                toId();
+            });
+
+            $('button#goNow').on('click', function() {
+                goNow();
+            });
+
+            // auto id to date
+            $('#mstid').on('input', function() {
+                normilizeID();
+                toDate();
+            });
+
+            // auto date to id
+            $('#datePart').on('input', function() {
+                toId();
+            });
+            $('#timePart').on('input', function() {
+                toId();
+            });
+
+            //$('#mstid').on('focus', function() { $(this).select(); } );
+
+            $.datepicker.setDefaults( $.datepicker.regional[ "ja" ] );
+            $('#datePart').datepicker({
+                showButtonPanel: true,
+                onSelect: function() { toId(); }
+            });
+
+            // Play
+            //setInterval(function() {
+            //    goNow();
+            //}, 60)
+        })
+
+    }());
+
+</script>
+
+</body>
+</html>
