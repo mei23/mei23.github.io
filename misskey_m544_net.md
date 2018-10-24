@@ -4,7 +4,9 @@
 
 [リポジトリ](https://github.com/mei23/misskey/tree/mei-m544)
 
-## オリジナルとの差分
+[差分](https://github.com/mei23/misskey/compare/master...mei-m544)
+
+## オリジナルとの変更点
 
 - avatorの背景色がalphaになっている
 - リアクションの背景色がalphaになっている
