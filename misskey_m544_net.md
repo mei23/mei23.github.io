@@ -1,4 +1,4 @@
-# mst.m544.net
+# misskey.m544.net
 
 [Misskey](https://github.com/syuilo/misskey)インスタンス
 
