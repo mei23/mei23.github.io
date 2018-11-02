@@ -4,7 +4,7 @@
 
 [リポジトリ](https://github.com/mei23/misskey/tree/mei-m544)
 
-[差分](https://github.com/mei23/misskey/compare/master...mei-m544)
+[差分](https://github.com/syuilo/misskey/compare/master...mei23:mei-m544)
 
 ## オリジナルとの変更点
 
