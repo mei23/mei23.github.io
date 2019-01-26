@@ -32,7 +32,7 @@
   ユーザー毎のoutboxの全体版(テスト)
 - AP deliver リクエストタイムアウトが変更されている
 - AP CollectionPageの定義だけある
-- リアクションdeleteのlimitが少しい多い
+- リアクションdeleteのlimitが少し多い
 - ハッシュタグ文字数の制限数50→100
 
 その他のクライアントの変更
