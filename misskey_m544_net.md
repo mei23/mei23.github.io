@@ -1,6 +1,19 @@
-# misskey.m544.net
+# めいすきー
 
-[Misskey](https://github.com/syuilo/misskey)インスタンス
+めいすきー (Meisskey) はMisskeyインスタンスのうちの1つです
+
+[Misskeyについて](https://joinmisskey.github.io/ja/)
+
+## よくある質問
+
+#### ソーシャルって何？  
+ローカル＋ホーム
+
+#### アプリありますか？  
+AndroidならSubwayTooterがあります、iOSアプリはいまのところありません。  
+ただ、スマホでは「ホームに追加」などをするといい感じになると思います。
+
+## ここのソースなど
 
 [リポジトリ](https://github.com/mei23/misskey/tree/mei-m544)
 
