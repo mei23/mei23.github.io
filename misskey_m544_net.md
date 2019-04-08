@@ -25,7 +25,7 @@ AndroidならSubwayTooterがあります、iOSアプリはいまのところあ�
 
 [差分](https://github.com/syuilo/misskey/compare/master...mei23:mei-m544)
 
-## オリジナルとの変更点
+## オリジナルとの差分
 
 機能
 - 既定のテーマがオリジナルになっている
@@ -70,6 +70,7 @@ AndroidならSubwayTooterがあります、iOSアプリはいまのところあ�
 - tune inbox retry interval 1sec~ => 60sec~
 - Noteのog:imageにアバターじゃなくて添付画像を使用する
 - httpリクエストを出すときにできればkeep-aliveする
+- 自分の行ったRenote/自分の投稿のRenote の設定がLTLに効くように
 
 その他のクライアントの変更
 - 画像の枠の色が少し透過している
@@ -84,3 +85,7 @@ AndroidならSubwayTooterがあります、iOSアプリはいまのところあ�
 - Fix: 放っておくとTLの遡りで抜けが出る
 - Fix: Activityチャートが壊れるのをとりあえず修正
 - Fix: 投稿ウィジットでローカルのみの公開範囲で投稿できない
+- Fix: パスワードの確認が一致してなくてもサインアップできてしまう
+- Fix: ユーザー表示を切り替えてもフォローボタンの状態が変わらない
+- ソーシャルのツールチップに説明を追加
+- ReplyをRenoteしたときにRenoteバーをReply先の上に表示するように
