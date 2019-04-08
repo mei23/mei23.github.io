@@ -69,6 +69,7 @@ AndroidならSubwayTooterがあります、iOSアプリはいまのところあ�
 - skip like to foreign host
 - tune inbox retry interval 1sec~ => 60sec~
 - Noteのog:imageにアバターじゃなくて添付画像を使用する
+- httpリクエストを出すときにできればkeep-aliveする
 
 その他のクライアントの変更
 - 画像の枠の色が少し透過している
@@ -81,3 +82,5 @@ AndroidならSubwayTooterがあります、iOSアプリはいまのところあ�
 - ミュート / ブロック / サイレンス する際に確認が表示される
 - タグクラウドとトレンドの更新間隔 1分→15分
 - Fix: 放っておくとTLの遡りで抜けが出る
+- Fix: Activityチャートが壊れるのをとりあえず修正
+- Fix: 投稿ウィジットでローカルのみの公開範囲で投稿できない
