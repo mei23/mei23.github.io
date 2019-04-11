@@ -21,9 +21,11 @@ AndroidならSubwayTooterがあります、iOSアプリはいまのところあ�
 
 ## ここのソースなど
 
-[リポジトリ](https://github.com/mei23/misskey/tree/mei-m544)
+[リポジトリ](https://github.com/mei23/misskey/tree/mei-m544)  
+リリースノートは https://github.com/mei23/misskey/releases で`*-m*`のような形式になっているものです。
 
-[差分](https://github.com/syuilo/misskey/compare/master...mei23:mei-m544)
+なお [💛.tk](https://xn--6r8h.tk/) の方のリポジトリは [こちら](https://github.com/mei23/misskey/tree/mei-love) で  
+リリースノートは https://github.com/mei23/misskey/releases で`*-l*`のような形式になっているものになります。
 
 ## オリジナルとの差分
 
