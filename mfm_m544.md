@@ -26,7 +26,7 @@ Misskey, Mastodon 全般で使える, AP連携あり
 MFMと呼ばれるMisskeyの文字装飾  
 Misskey間では基本的に連携できる, 同じ対応をしているインスタンスとは連携できる
 
-https://joinmisskey.github.io/ja/wiki/usage/mfm/
+[https://joinmisskey.github.io/ja/wiki/usage/mfm/](https://joinmisskey.github.io/ja/wiki/usage/mfm/)
 
 ````
 **太字**
