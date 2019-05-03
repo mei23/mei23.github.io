@@ -28,61 +28,69 @@ Misskey間では基本的に連携できる, 同じ対応をしているイン�
 
 [https://joinmisskey.github.io/ja/wiki/usage/mfm/](https://joinmisskey.github.io/ja/wiki/usage/mfm/)
 
-````
-**太字**
 
-<center>中央揃え</center>
+`**太字**`
 
-~~打ち消し線~~
+`<center>中央揃え</center>`
 
-<i>斜体</i>
+`~~打ち消し線~~`
 
-<small>小さい字</small>
+`<i>斜体</i>`
 
-<motion>モーション</motion>
+`<small>小さい字</small>`
 
-(((モーション)))
+`<motion>モーション</motion>`
 
-*** ビッグ＋ ***
+`(((モーション)))`
 
-<flip>左右反転</flip>
+`*** ビッグ＋ ***`
 
+`<flip>左右反転</flip>`
+
+```
 <spin>回転</spin>
 <spin right>右回転</spin>
 <spin left>左回転</spin>
 <spin alternate>往復回転</spin>
+```
 
-<jump>ジャンプ</jump>
+`<jump>ジャンプ</jump>`
 
+````
 ```
 コードブロック
 ```
+````
 
+````
 `インラインコード`
+````
 
+````
 "
 引用ブロック
 "
+````
 
-> 引用行
+`> 引用行`
 
-検索 検索
+`検索 検索`
 
-[リンク](url)
+`[リンク](url)`
 
-?[詳細なしリンク](url)
+`?[詳細なしリンク](url)`
 
-【タイトル】
+`【タイトル】`
 
-[タイトル]
+`[タイトル]`
 
-\(インライン数式\)
+`\(インライン数式\)`
 
+```
 \[
 ブロック数式
 ]\
-
-````
+```
 
 ## 互換文字装飾
 ![mfm_kiritan.png](mfm_kiritan.png)
