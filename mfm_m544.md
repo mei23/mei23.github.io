@@ -39,7 +39,8 @@ Misskey間では基本的に連携できる, 同じ対応をしているイン�
 
 `<small>小さい字</small>`
 
-`<motion>モーション</motion>`
+`<motion>モーション</motion>`  
+15文字 or 5エレメント かつ 5つまで
 
 `(((モーション)))`
 
@@ -53,8 +54,10 @@ Misskey間では基本的に連携できる, 同じ対応をしているイン�
 <spin left>左回転</spin>
 <spin alternate>往復回転</spin>
 ```
+10文字 or 5エレメント かつ 5つまで
 
-`<jump>ジャンプ</jump>`
+`<jump>ジャンプ</jump>`  
+30文字 or 5エレメント かつ 5つまで
 
 ````
 ```
