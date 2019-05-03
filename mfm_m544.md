@@ -85,8 +85,4 @@ https://joinmisskey.github.io/ja/wiki/usage/mfm/
 ````
 
 ## 互換文字装飾
-```
-[[[スピン]]] きりたん丼
-
-{{{スピン}}} きりたん丼
-```
+![mfm_kiritan.png](mfm_kiritan.png)
