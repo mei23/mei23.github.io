@@ -85,11 +85,11 @@ AndroidならSubwayTooterがあります、iOSアプリはいまのところあ�
 - Increase follow / unfollow limit
 - ジョブの並列度を設定できるように
 - 管理画面のジョブキューでjammed warnをしないように
-- Noteが間接参照されたときはstreaming等にpublishしない
+- ~~Noteが間接参照されたときはstreaming等にpublishしない~~
 - idでusers/showされたときにもユーザー情報更新
-- Fix: Noteをpullした時にhostをvalidateしてない
+- ~~Fix: Noteをpullした時にhostをvalidateしてない~~ Merged
 - Fix: user resyncに失敗するとエラーになる
-- Fix: mention (あなた宛て) TLにミュートが効かない
+- ~~Fix: mention (あなた宛て) TLにミュートが効かない~~ Merged
 - Fix: リモートからのRenoteが空投稿になったりする
 - AP Person 作成に失敗した時に対象を表示するように
 
@@ -101,7 +101,7 @@ AndroidならSubwayTooterがあります、iOSアプリはいまのところあ�
 - 「投稿しました！」とかのnotificationがクリックで消せる
 - ~~Fix: ユーザーTLが投稿日順にソートされるように修正済み~~ Merged
 - Desktopのユーザーページのフォトが一時的に削除されている
-- ミュート / ブロック / サイレンス する際に確認が表示される
+- ~~ミュート / ブロック / サイレンス する際に確認が表示される~~ Merged
 - タグクラウドとトレンドの更新間隔 1分→15分
 - ~~Fix: 放っておくとTLの遡りで抜けが出る~~ Merged
 - ~~Fix: 投稿ウィジットでローカルのみの公開範囲で投稿できない~~ Merged
@@ -120,7 +120,7 @@ AndroidならSubwayTooterがあります、iOSアプリはいまのところあ�
 - ミューブロリストにユーザーリンク
 - relative time表示の修正 https://github.com/mei23/misskey/commit/9a02b896de4cec33ddf4b6ae26cb90b60f47eaa8
 - リアクションテキストボックスは遅延表示させずデフォルトで表示しておくように
-- Fix: エクスポートリクエストに失敗してもエラーが出ない
+- ~~Fix: エクスポートリクエストに失敗してもエラーが出ない~~ Marged
 - 最初にテーマを再適用させる処理を復活
 - UIオブジェクトを透過させて壁紙指定時に壁紙がよく見えるように
 - リバーシの最下段がぴったり隠れないようにサイズ調整
