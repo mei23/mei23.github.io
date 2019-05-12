@@ -96,5 +96,13 @@ Misskey間では基本的に連携できる, 同じ対応をしているイン�
 ]\
 ```
 
+## 追加文字装飾
+独自
+```
+<vflip>上下反転</vflip>
+
+<rotate DEG>指定角度回転</rotate>
+```
+
 ## 互換文字装飾
 ![mfm_kiritan.png](mfm_kiritan.png)
