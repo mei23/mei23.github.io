@@ -54,6 +54,8 @@ Misskey間では基本的に連携できる, 同じ対応をしているイン�
 <spin right>右回転</spin>
 <spin left>左回転</spin>
 <spin alternate>往復回転</spin>
+<xspin>X軸回転</xspin>
+<yspin>Y軸回転</yspin>
 ```
 ~~10文字 or 5エレメント / 1つ かつ 5つまで~~ => 100文字 or 20エレメント / 1つ かつ 50まで
 
@@ -107,3 +109,6 @@ Misskey間では基本的に連携できる, 同じ対応をしているイン�
 
 ## 互換文字装飾
 ![mfm_kiritan.png](mfm_kiritan.png)
+```
+＜＜＜左右反転＞＞＞
+```
