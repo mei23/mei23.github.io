@@ -35,10 +35,6 @@ AndroidならSubwayTooterがあります、iOSアプリはいまのところあ�
 [めいすきーのリポジトリ](https://github.com/mei23/misskey/tree/mei-m544)  
 [リリースノート](https://github.com/mei23/misskey/releases)で`*-m*`のような形式になっているものです。
 
-~~なお [💛.tk](https://xn--6r8h.tk/) の方のリポジトリは [こちら](https://github.com/mei23/misskey/tree/mei-love) で  
-[リリースノート](https://github.com/mei23/misskey/releases)で`*-l*`のような形式になっているものになります。  
-こちらはデフォルトのテーマが赤くないという違いがあります。~~
-
 ## オリジナルとの差分
 
 機能
