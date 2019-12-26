@@ -1,6 +1,6 @@
 # めいすきー
 
-めいすきー (Meisskey) はMisskeyインスタンスのうちの1つです
+めいすきー (Meisskey) はお淑やかなお嬢様のためのMisskeyインスタンスなのだわ
 
 [Misskeyについて](https://joinmisskey.github.io/ja/)
 
