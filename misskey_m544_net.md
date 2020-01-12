@@ -19,9 +19,14 @@ AndroidならSubwayTooterがあります、iOSアプリはいまのところあ�
 #### マストドンですか？
 マストドンではありません
 
+## 禁止行為
+
+- 全ミュート・全ブロック またはそれに近い行為
+
+その他、不適切と判断する行為
+
 ## ここのソースなど
 
 [めいすきーのリポジトリ](https://github.com/mei23/misskey/tree/mei-m544)  
-[リリースノート](https://github.com/mei23/misskey/releases)で`*-m*`のような形式になっているものです。
 
 [オリジナルとの差分](misskey_m544_diff.md)
