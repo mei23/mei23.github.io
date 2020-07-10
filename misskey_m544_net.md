@@ -1,6 +1,6 @@
 # めいすきー
 
-めいすきー (Meisskey) は私のうちのガレージなのだわ
+めいすきー (Meisskey) はうちのガレージなのだわ
 
 [Misskeyについて](https://joinmisskey.github.io/ja/)
 
