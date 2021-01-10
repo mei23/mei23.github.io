@@ -1,5 +1,5 @@
 # めいすきー
-めいすきー (Meisskey) はMisskeyインスタンスでうちのガレージなのだわ
+めいすきー (Meisskey) はMisskeyインスタンスでうちのガレージを開放しているのだわ
 
 [Misskeyについて](https://joinmisskey.github.io/ja/)
 
@@ -19,7 +19,8 @@ https://join.misskey.page/ja/wiki/apps/clients
 #### マストドンですか？
 マストドンではありません
 
-その他、不適切と判断する行為
+#### 利用規約はありますか？
+気分
 
 ## ここのソースなど
 
