@@ -1,7 +1,5 @@
 # めいすきー
-めいすきー (Meisskey) はMisskeyインスタンスでうちのガレージを開放しているのだわ
-
-[Misskeyについて](https://joinmisskey.github.io/ja/)
+めいすきー (Meisskey) は、お淑やかなめいめいさん推しのためのめいめい邸ガレージなのだわ。
 
 ## よくある質問
 
@@ -17,7 +15,7 @@ https://join.misskey.page/ja/wiki/apps/clients
 ローカル＋ホーム
 
 #### マストドンですか？
-マストドンではありません
+マストドンてなんなのだわ？
 
 #### 利用規約はありますか？
 気分
@@ -25,5 +23,3 @@ https://join.misskey.page/ja/wiki/apps/clients
 ## ここのソースなど
 
 [めいすきーのリポジトリ](https://github.com/mei23/misskey/tree/mei-m544)  
-
-[オリジナルとの差分](misskey_m544_diff.md)
