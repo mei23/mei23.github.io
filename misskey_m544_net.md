@@ -1,5 +1,5 @@
 # めいすきー
-めいすきー (Meisskey) は、お淑やかなめいめいさん推しのためのめいめい邸ガレージなのだわ。
+お淑やかガレージ
 
 ## よくある質問
 
@@ -7,7 +7,7 @@
 設定→デザイン→テーマ で変更できます
 
 #### アプリありますか？
-Subway Tooterが使えるかもしれない  
+Subway Tooterが使えるかもしれない (Android)  
 https://play.google.com/store/apps/details?id=jp.juggler.subwaytooter  
 https://github.com/tateisu/SubwayTooter
 
