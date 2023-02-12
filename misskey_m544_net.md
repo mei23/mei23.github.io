@@ -7,9 +7,9 @@
 設定→デザイン→テーマ で変更できます
 
 #### アプリありますか？
-以下に書いてあるアプリが使えるかもしれません (インスタンスバージョンが違うので使えないかもしれません)
-
-https://join.misskey.page/ja/wiki/apps/clients
+Subway Tooterが使えるかもしれない 
+https://play.google.com/store/apps/details?id=jp.juggler.subwaytooter
+https://github.com/tateisu/SubwayTooter
 
 #### ソーシャルって何？  
 ローカル＋ホーム
