@@ -15,6 +15,8 @@ Milktea が使えるかもしれない (Android)
 https://play.google.com/store/apps/details?id=jp.panta.misskeyandroidclient
 https://github.com/pantasystem/Milktea
 
+↑サードパーティアプリは動かないかもしれないからあんまり文句言わないで欲しいのだわ。
+
 なお、PWAとして追加することも出来ます。
 
 #### ソーシャルって何？  
