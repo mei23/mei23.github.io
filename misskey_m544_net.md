@@ -7,9 +7,15 @@
 設定→デザイン→テーマ で変更できます
 
 #### アプリありますか？
-Subway Tooterが使えるかもしれない (Android)  
+SubwayTooter が (設定画面で陳腐化した何かを有効にすれば) 使えるかもしれない (Android)  
 https://play.google.com/store/apps/details?id=jp.juggler.subwaytooter  
 https://github.com/tateisu/SubwayTooter
+
+Milktea が使えるかもしれない (Android)  
+https://play.google.com/store/apps/details?id=jp.panta.misskeyandroidclient
+https://github.com/pantasystem/Milktea
+
+なお、PWAとして追加することも出来ます。
 
 #### ソーシャルって何？  
 ローカル＋ホーム
